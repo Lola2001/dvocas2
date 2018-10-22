@@ -3,7 +3,7 @@
 ## Zadatak 1
 (radi ga laborant u saradnji sa studentima)
 
-Napraviti nabrojivi tip **AgregatnaStanja** u paketu **zadatak1** koji ima sledeće instance **(ENUM - nabrojivi tip)**:
+Napraviti nabrojivi tip **AgregatnaStanja** u paketu **zadatak1** koji ima sledeće instance:
 
 1. **CVRSTO**
 2. **TECNO**
@@ -11,15 +11,15 @@ Napraviti nabrojivi tip **AgregatnaStanja** u paketu **zadatak1** koji ima slede
 
 Napraviti klasu **KonvertorTemperature** u paketu **zadatak1** koja ima:
 
-1. Statičku konstantu **APSOLUTNA_NULA_C** koja ima vrednost -273.15 **(STATIC, FINAL, statičke konstante)**
+1. Statičku konstantu **APSOLUTNA_NULA_C** koja ima vrednost -273.15
 
 2. Statičku konstantu **APSOLUTNA_NULA_F** koja ima vrednost -459.67
 
-3. Metodu **konvertujCUF** koja kao parametar dobija iznos temperature u celzijusima (realan broj). Ova metoda proverava da li je uneta temperatura jednaka ili veća od apsolutne nule za celzijusovu skalu, i ako jeste, pretvara je u temperaturu izraženu u farenhajtima i vraća kao rezultat. Ako nije, metoda vraća vrednost -1000 ispisuje na ekranu "GRESKA". Konverzija se vrši po formuli **TF = TC*9/5 + 32** **(IF klauzula i operatori poređenja vrednosti, RETURN naredba i prekidanje izvršavanja metode)**
+3. Metodu **konvertujCUF** koja kao parametar dobija iznos temperature u celzijusima (realan broj). Ova metoda proverava da li je uneta temperatura jednaka ili veća od apsolutne nule za celzijusovu skalu, i ako jeste, pretvara je u temperaturu izraženu u farenhajtima i vraća kao rezultat. Ako nije, metoda vraća vrednost -1000 ispisuje na ekranu "GRESKA". Konverzija se vrši po formuli **TF = TC*9/5 + 32** 
 
 4. Metodu **konvertujFUC** koja kao parametar dobija iznos temperature u farenhajtima. Ova metoda proverava da li je uneta temperatura jednaka ili veća od apsolutne nule za farenhajtovu skalu, i ako jeste, pretvara je u temperaturu izraženu u celzijusima i vraća kao rezultat. Ako nije, metoda vraća vrednost -1000 i ispisuje na ekranu "GRESKA". Konverzija se vrši po formuli **TC = (TF-32)*5/9**
 
-5. Metodu **vratiAgregatnoStanjeVode** koja kao parametar dobija iznos temperature u celzijusima (realan broj) i proverava i vraća u kom bi agregatnom stanju voda bila na toj temperaturi (nabrojivi tip). Ako je temperatura niža od 0 celzijusa, metoda vraća da je voda u čvrstom stanju (AgregatnaStanja.CVRSTO). Ako je od 0 do 100 stepeni (ali ipak manja od 100) onda vraća da je u tečnom stanju (AgregatnaStanja.TECNO), a za temperature od 100 stepeni i više, vraća da je u gasovitom stanju (AgregatnaStanja.GAS).**(ELSE klauzula, složeni uslovi, logički operatori AND, OR, NOT, svaki logički uslov može da se napiše na više načina)**
+5. Metodu **vratiAgregatnoStanjeVode** koja kao parametar dobija iznos temperature u celzijusima (realan broj) i proverava i vraća u kom bi agregatnom stanju voda bila na toj temperaturi (nabrojivi tip). Ako je temperatura niža od 0 celzijusa, metoda vraća da je voda u čvrstom stanju (AgregatnaStanja.CVRSTO). Ako je od 0 do 100 stepeni (ali ipak manja od 100) onda vraća da je u tečnom stanju (AgregatnaStanja.TECNO), a za temperature od 100 stepeni i više, vraća da je u gasovitom stanju (AgregatnaStanja.GAS).
 
 Napraviti klasu **ProveraKonvertoraTemperature** u paketu **zadatak1** koja, preko svoje **main** metode, proverava rad klase KonvertorTemperature pozivanjem svih njenih metoda i ispisivanjem rezultata na ekranu.
 
